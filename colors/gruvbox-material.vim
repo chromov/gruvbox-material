@@ -59,7 +59,7 @@ highlight! link iCursor Cursor
 highlight! link lCursor Cursor
 highlight! link CursorIM Cursor
 call gruvbox_material#highlight('CursorColumn', s:palette.none, s:palette.bg1)
-call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg1)
+call gruvbox_material#highlight('CursorLine', s:palette.none, s:palette.bg2)
 call gruvbox_material#highlight('LineNr', s:palette.grey0, s:palette.none)
 if (&relativenumber == 1 && &cursorline == 0) || s:configuration.sign_column_background !=# 'default'
   call gruvbox_material#highlight('CursorLineNr', s:palette.grey2, s:palette.none)
@@ -75,7 +75,7 @@ call gruvbox_material#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold
 call gruvbox_material#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
 call gruvbox_material#highlight('ModeMsg', s:palette.fg0, s:palette.none, 'bold')
 call gruvbox_material#highlight('MoreMsg', s:palette.yellow, s:palette.none, 'bold')
-call gruvbox_material#highlight('MatchParen', s:palette.none, s:palette.bg4)
+call gruvbox_material#highlight('MatchParen', s:palette.bg2, s:palette.bg_green, 'bold')
 call gruvbox_material#highlight('NonText', s:palette.bg5, s:palette.none)
 call gruvbox_material#highlight('Whitespace', s:palette.bg5, s:palette.none)
 call gruvbox_material#highlight('SpecialKey', s:palette.bg5, s:palette.none)
@@ -114,7 +114,7 @@ else
   call gruvbox_material#highlight('TabLineFill', s:palette.fg0, s:palette.bg_statusline1)
   call gruvbox_material#highlight('TabLineSel', s:palette.bg0, s:palette.grey2)
 endif
-call gruvbox_material#highlight('VertSplit', s:palette.bg5, s:palette.none)
+call gruvbox_material#highlight('VertSplit', s:palette.bg_statusline2, s:palette.bg_statusline2)
 if s:configuration.visual ==# 'grey background'
   call gruvbox_material#highlight('Visual', s:palette.none, s:palette.bg3)
   call gruvbox_material#highlight('VisualNOS', s:palette.none, s:palette.bg3)
@@ -1150,8 +1150,8 @@ highlight! link elixirKeyword Orange
 highlight! link elixirInterpolation Yellow
 highlight! link elixirInterpolationDelimiter Yellow
 highlight! link elixirSelf Purple
-highlight! link elixirPseudoVariable Purple
-highlight! link elixirModuleDefine PurpleItalic
+highlight! link elixirPseudoVariable Blue
+highlight! link elixirModuleDefine Red
 highlight! link elixirBlockDefinition RedItalic
 highlight! link elixirDefine RedItalic
 highlight! link elixirPrivateDefine RedItalic
@@ -1685,7 +1685,7 @@ highlight! link netrwVersion Orange
 " }}}
 " andymass/vim-matchup {{{
 call gruvbox_material#highlight('MatchParenCur', s:palette.none, s:palette.none, 'bold')
-call gruvbox_material#highlight('MatchWord', s:palette.none, s:palette.none, 'underline')
+call gruvbox_material#highlight('MatchWord', s:palette.none, s:palette.bg3, 'underline')
 call gruvbox_material#highlight('MatchWordCur', s:palette.none, s:palette.none, 'underline')
 " }}}
 " easymotion/vim-easymotion {{{

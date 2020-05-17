@@ -160,7 +160,7 @@ function! gruvbox_material#get_palette(background, palette) "{{{
       let palette2 = {
             \ 'fg0':              ['#d4be98',   '223'],
             \ 'fg1':              ['#ddc7a1',   '223'],
-            \ 'red':              ['#ea6962',   '167'],
+            \ 'red':              ['#458588',   '167'],
             \ 'orange':           ['#e78a4e',   '208'],
             \ 'yellow':           ['#d8a657',   '214'],
             \ 'green':            ['#a9b665',   '142'],
